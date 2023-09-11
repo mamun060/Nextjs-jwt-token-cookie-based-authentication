@@ -20,7 +20,7 @@ function Page() {
     const json = await response.json()
 
     if(json['status'] === true) {
-      router.replace('/dashboard');
+      router.push('/dashboard');
     } else {
       alert(json['message']);
     }

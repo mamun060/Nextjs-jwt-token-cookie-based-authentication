@@ -8,17 +8,9 @@ const Page = () => {
     const res = await fetch("/api/login");
     const json = await res.json();
     if(json['status'] === true){
-      router.replace("/");
+      router.push("/");
     }
   }
-  
-  // const Logout = async () => {
-  //   const res = await fetch("/api/login");
-  //   const json = await res.json();
-  //   if(json['status'] === true){
-  //     router.replace("/");
-  //   }
-  // }
 
   return (
   <div className="hero min-h-screen bg-base-200">
